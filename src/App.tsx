@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowDownRight, ArrowUpRight, MoveUpRight, Sparkles } from 'lucide-react'
 import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const projects = [
   { n: '01', title: 'Visual Identity', type: 'Brand / Design', copy: 'A flexible identity system for a future-facing brand.', accent: 'lime' },
@@ -33,7 +36,7 @@ function App() {
             opacity: 1,
             duration: 0.9,
             ease: 'power3.out',
-            scrollTrigger: undefined,
+            scrollTrigger: { trigger: el, start: 'top 88%', once: true },
           },
         )
       })
