@@ -110,7 +110,6 @@ function App() {
         </section>
 
                 <section className="intro section" data-reveal>
-          <div className="section-label mono">01 / WHAT I CAN DO FOR YOU</div>
           <div className="desk-intro-copy">
             <p className="desk-kicker">YOU BRING THE <mark>BUSINESS.</mark></p>
             <p className="desk-lead">I help turn what you do into a social presence that looks like you, sounds like you and gives people a reason to stop and pay attention.</p>
@@ -124,7 +123,7 @@ function App() {
           </div>
 
           <div className="desk-approach">
-            <div className="approach-heading"><span className="mono">02 / THE APPROACH</span><h3>Then we get<br/><em>to work.</em></h3><p>I treat every project like it is my own. I ask first, research properly, make the idea, work with the client and keep refining until it feels right.</p></div>
+            <div className="approach-heading"><h3>Then we get<br/><em>to work.</em></h3><p>I treat every project like it is my own. I ask first, research properly, make the idea, work with the client and keep refining until it feels right.</p></div>
             <div className="approach-steps">
               <article><span className="mono">01</span><strong>UNDERSTAND</strong><p>Ask questions and get clear on the business, audience and goal.</p></article>
               <article><span className="mono">02</span><strong>EXPLORE</strong><p>Study the brand, competitors and trends before choosing a direction.</p></article>
@@ -139,7 +138,7 @@ function App() {
 
         <section className="work section" id="work">
           <div className="work-heading" data-reveal>
-            <div><div className="section-label mono">02 / THINGS I'VE MADE</div><h2>Pick something<br/><span>up.</span></h2></div>
+            <div><h2>Pick something<br/><span>up.</span></h2></div>
             <p>These are placeholder projects for now. Real work, client names and case studies come next.</p>
           </div>
           <div className="notes-grid">
@@ -157,7 +156,7 @@ function App() {
         </section>
 
         <section className="capabilities section" data-reveal>
-          <div className="section-label mono">03 / THINGS I DO</div>
+          
           <h2>I design.<br/><i>I post.</i><br/>I make brands<br/><span>feel like brands.</span></h2>
           <div className="cap-list">
             {notes.map(([title, text], i) => <div className="cap-row" key={title}><span className="mono">0{i+1}</span><strong>{title}</strong><p>{text}</p><ArrowUpRight size={20}/></div>)}
@@ -166,7 +165,7 @@ function App() {
 
         <section className="yellow-zone">
           <div className="yellow-inner">
-            <div className="section-label mono">04 / PLAYGROUND</div>
+            
             <h2>Ideas before<br/><span>they become briefs.</span></h2>
             <p>Personal experiments, visual studies, trend tests and tiny obsessions. This is the messy corner of the desk.</p>
             <div className="floating-mini mini-one">try this</div>
@@ -176,7 +175,7 @@ function App() {
         </section>
 
         <section className="about section" id="about" data-reveal>
-          <div className="section-label mono">05 / ABOUT VRUSHTI</div>
+          
           <div className="about-layout">
             <div className="about-number">V<span>.</span></div>
             <div>
@@ -189,7 +188,7 @@ function App() {
 
         <section className="contact section" id="contact">
           <div className="contact-note">
-            <div className="section-label mono">06 / SAY HELLO</div>
+            
             <h2>Got a good<br/><span>idea?</span></h2>
             <p>Let's put it on the desk.</p>
             <button className="paper-button dark" onClick={() => window.location.href='mailto:hello@vrushti.design'}>Start a conversation <MoveUpRight size={17}/></button>
