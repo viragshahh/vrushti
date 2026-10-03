@@ -34,8 +34,9 @@ function App() {
       pages.forEach((page, index) => {
         gsap.set(page, {
           zIndex: pages.length - index,
-          transformOrigin: 'left center',
-          rotateY: 0,
+          transformOrigin: 'center top',
+          rotateX: 0,
+          transformPerspective: 1800,
         })
       })
 
@@ -69,7 +70,7 @@ function App() {
       pages.forEach((page, index) => {
         if (index === pages.length - 1) return
         flip.to(page, {
-          rotateY: -180,
+          rotateX: -180,
           duration: 1,
           ease: 'none',
         }, index)
@@ -153,7 +154,9 @@ function App() {
         <section className="notebook-scroll" id="top" ref={notebook}>
           <div className="notebook-stage">
             <div className="notebook-shadow" aria-hidden="true" />
-            <div className="notebook-spine" aria-hidden="true" />
+            <div className="notebook-binding" aria-hidden="true">
+              {Array.from({ length: 15 }).map((_, index) => <span key={index} />)}
+            </div>
 
             <article className="notebook-page page-cover">
               <div className="cover-content">
