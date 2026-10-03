@@ -79,3 +79,104 @@
 .desk-services>.mono{color:#777166}.desk-service-list{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}.desk-service-list span{border:1px solid var(--ink);padding:9px 12px;background:rgba(247,220,88,.32);font:10px 'DM Mono';letter-spacing:.07em}
 @media(max-width:950px){.intro{grid-template-columns:1fr;min-height:auto;padding-top:105px;padding-bottom:100px}.offer-grid,.desk-approach,.desk-services{grid-column:1}.offer-grid{margin-top:45px}.desk-approach{margin-top:80px;grid-template-columns:1fr;gap:35px}}
 @media(max-width:600px){.intro{padding-top:90px}.desk-kicker{font-size:16vw;line-height:.92}.desk-lead{font-size:19px;margin-top:24px}.offer-grid{grid-template-columns:1fr;gap:14px;margin-top:38px}.offer-card,.offer-card:nth-child(1),.offer-card:nth-child(2),.offer-card:nth-child(3),.offer-card:nth-child(4){min-height:235px;transform:none}.offer-card strong{font-size:30px;margin-top:26px}.offer-card p{font-size:13px}.desk-approach{margin-top:70px;padding-top:25px;gap:28px}.approach-heading h3{font-size:48px}.approach-steps{grid-template-columns:1fr}.approach-steps article{min-height:125px}.desk-services{margin-top:45px}.desk-service-list span{font-size:9px;padding:8px 10px}}
+
+
+/* MOBILE COVER SAFETY: keep every cover element in normal flow */
+@media (max-width:600px){
+  .desk-hero{
+    min-height:100svh;
+    height:auto;
+    display:block;
+    padding:128px 7vw 34px;
+    overflow:hidden;
+  }
+
+  .hero-main{
+    width:100%;
+    max-width:none;
+    position:relative;
+    z-index:3;
+  }
+
+  .hero-title{
+    font-size:clamp(64px,20vw,104px);
+    line-height:.82;
+  }
+
+  .hero-copy{
+    max-width:100%;
+    margin-top:28px;
+    font-size:16px;
+    line-height:1.5;
+  }
+
+  .hero-actions{
+    margin-top:24px;
+    gap:14px;
+  }
+
+  .paper-button{
+    max-width:100%;
+  }
+
+  .tiny-note{
+    font-size:10px;
+  }
+
+  .desk-note{
+    position:relative;
+    inset:auto;
+    width:min(165px,44vw);
+    min-height:165px;
+    margin:0;
+    padding:16px;
+    z-index:3;
+  }
+
+  .n1{
+    margin-top:52px;
+    margin-left:auto;
+    transform:rotate(-4deg)!important;
+  }
+
+  .n2{
+    margin-top:18px;
+    margin-left:4%;
+    transform:rotate(3deg)!important;
+  }
+
+  .desk-note strong{
+    font-size:15px;
+  }
+
+  .desk-note span{
+    font-size:12px;
+  }
+
+  .desk-note small{
+    font-size:9px;
+  }
+
+  .hero-bottom{
+    position:relative;
+    left:auto;
+    right:auto;
+    bottom:auto;
+    margin-top:38px;
+    padding-top:4px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    align-items:center;
+    z-index:3;
+  }
+
+  .hero-bottom span:last-child{
+    margin-left:auto;
+  }
+
+  .desk-lines{
+    inset:78px 0 0;
+    background-size:48px 48px;
+  }
+}
