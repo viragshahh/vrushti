@@ -35,3 +35,35 @@
   .note-info p{max-width:68%}.about-tags span{font-size:6.5px}
 }
 @media(pointer:coarse){.cursor{display:none}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor{display:none}}
+
+/* NOTEBOOK EXPERIENCE OVERRIDES */
+:root{--notebook-bg:#d9d1c0}
+body{background:var(--notebook-bg)}
+.site{background:var(--notebook-bg)}
+.nav{height:70px}
+.notebook-scroll{height:100vh;position:relative;overflow:hidden}
+.notebook-stage{isolation:isolate}
+.notebook-page{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.page-cover{transform-style:preserve-3d}
+.page-paper{transform-style:preserve-3d}
+.notebook-page:not(.page-back){backface-visibility:hidden}
+.cover-note,.cover-sticker{transition:transform .25s ease,box-shadow .25s ease}
+.cover-note:hover{transform:rotate(0deg) translateY(-6px)}
+.cover-sticker:hover{transform:rotate(4deg) scale(1.04)}
+.mini-project{cursor:pointer}
+.notebook-button{transition:transform .2s ease,box-shadow .2s ease}
+.notebook-button:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--red)}
+.scroll-cue,.page-progress{z-index:20}
+@media(max-width:900px){
+  .notebook-stage{width:92vw;height:76vh}
+}
+@media(max-width:600px){
+  .notebook-scroll{height:100vh}
+  .notebook-stage{width:92vw;height:78vh;min-height:500px;max-height:690px;perspective:1050px}
+  .notebook-page{box-shadow:7px 9px 17px rgba(43,34,23,.13)}
+  .page-cover:before{inset:8px}
+  .scroll-cue,.page-progress{bottom:3%}
+}
+@media(prefers-reduced-motion:reduce){
+  .notebook-stage{perspective:none}
+}
