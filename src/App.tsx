@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowDown, ArrowUpRight, MoveUpRight, Paperclip, Pin, Sparkles } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, MoveUpRight, Paperclip, Pin } from 'lucide-react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
