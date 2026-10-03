@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { ArrowDownRight, ArrowUpRight, MoveUpRight, Sparkles, Pin, Paperclip } from 'lucide-react'
+import { ArrowDownRight, ArrowUpRight, MoveUpRight, Pin, Paperclip } from 'lucide-react'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -60,7 +60,7 @@ function App() {
 
   return (
     <div className="site" ref={root}>
-      <div ref={cursor} className="cursor" aria-hidden="true"><span>{cursorLabel}</span></div>
+      <div ref={cursor} className={`cursor ${cursorLabel ? "cursor-active" : ""}`} aria-hidden="true"><span>{cursorLabel || "✦"}</span></div>
       <div className="paper-grain" aria-hidden="true" />
 
       <header className="nav">
@@ -82,9 +82,9 @@ function App() {
 
       <main>
         <section className="desk-hero section" id="top">
-          <div className="desk-lines" />
+          <div className="desk-lines" /><div className="hero-spark spark-one">✦</div><div className="hero-spark spark-two">✦</div><div className="hero-spark spark-three">✧</div>
           <div className="hero-main">
-            <div className="mono kicker">CREATIVE PORTFOLIO / 2026</div>
+            <div className="mono kicker">CREATIVE PORTFOLIO / DIGITAL DESK</div>
             <h1 className="hero-title">Hi, I'm<br/><span>Vrushti.</span></h1>
             <p className="hero-copy">Graphic designer + social media creative. I make brands feel a little more <strong>alive.</strong></p>
             <div className="hero-actions">
@@ -103,7 +103,7 @@ function App() {
           <div className="desk-note note-blue n3" style={{transform:'rotate(-3deg)'}}>
             <Paperclip size={18}/><strong>currently into:</strong><span>good type<br/>weird layouts<br/>great coffee</span>
           </div>
-          <div className="desk-sticker">✦<br/><span>MAKE<br/>GOOD<br/>STUFF</span></div>
+          <div className="desk-sticker"><span className="sticker-star">✦</span><span>MAKE<br/>GOOD<br/>STUFF</span></div>
           <div className="hero-bottom mono"><span>SCROLL TO EXPLORE ↓</span><span>DESIGN / SOCIAL / CONTENT</span></div>
         </section>
 
