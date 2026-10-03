@@ -129,7 +129,7 @@ function App() {
     if (!notebook.current) return
     const start = notebook.current.getBoundingClientRect().top + window.scrollY
     const distance = Math.max(window.innerHeight * 5.5, window.innerHeight * 5)
-    const totalTurns = 6
+    const totalTurns = 7
     window.scrollTo({
       top: start + (distance / totalTurns) * pageIndex,
       behavior: 'smooth',
