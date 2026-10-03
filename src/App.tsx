@@ -86,7 +86,7 @@ function App() {
           <div className="hero-main">
             <div className="mono kicker">CREATIVE PORTFOLIO / 2026</div>
             <h1 className="hero-title">Hi, I'm<br/><span>Vrushti.</span></h1>
-            <p className="hero-copy">Graphic designer + social-first creative. I make brands feel a little more <strong>alive.</strong></p>
+            <p className="hero-copy">Graphic designer + social media creative. I make brands feel a little more <strong>alive.</strong></p>
             <div className="hero-actions">
               <button className="paper-button" onClick={() => scrollTo('work')}>Pick up my work <ArrowDownRight size={17}/></button>
               <span className="tiny-note">currently collecting good ideas ✦</span>
@@ -160,7 +160,7 @@ function App() {
             <div className="about-number">V<span>.</span></div>
             <div>
               <h2>Design brain.<br/><em>Social instinct.</em></h2>
-              <p>I like visual systems that have a point of view — expressive enough to be remembered, clear enough to work. I'm early in my journey, curious by default and always collecting references.</p>
+              <p>I like visual systems that have a point of view, expressive enough to be remembered, clear enough to work. I'm early in my journey, curious by default and always collecting references.</p>
               <div className="about-tags"><span>GRAPHIC DESIGN</span><span>SOCIAL MEDIA</span><span>CONTENT</span></div>
             </div>
           </div>
