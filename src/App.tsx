@@ -27,6 +27,8 @@ function App() {
   const [activeReel, setActiveReel] = useState(0)
   const [activePost, setActivePost] = useState(0)
   const [reelStartX, setReelStartX] = useState<number | null>(null)
+  const [activeReel, setActiveReel] = useState(0)
+  const [activePost, setActivePost] = useState(0)
 
   useEffect(() => {
     if (!root.current) return
