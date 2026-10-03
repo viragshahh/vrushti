@@ -109,12 +109,20 @@ function App() {
           <div className="hero-bottom mono"><span>SCROLL TO EXPLORE ↓</span><span>DESIGN / SOCIAL / CONTENT</span></div>
         </section>
 
-        <section className="intro section" data-reveal>
+                <section className="intro section" data-reveal>
           <div className="section-label mono">01 / THE DESK</div>
-          <div>
-            <p className="big-copy">Somewhere between <mark>strategy</mark> and “wait, this would look cool” is where I like to work.</p>
-            <p className="sub-copy">I create visual identities, social content and digital ideas for brands that want to be noticed without shouting.</p>
+          <div className="desk-intro-copy">
+            <p className="desk-kicker">YOUR BUSINESS. <mark>MY DESK.</mark></p>
+            <p className="desk-lead">I treat every project like it is my own. First I understand the business, then I find the idea, build the content and keep refining until it feels right.</p>
+            <div className="desk-proof"><span className="mono">THE APPROACH</span><span>Curious before creative. Personal before generic.</span></div>
           </div>
+          <div className="desk-process">
+            <article className="process-card process-yellow"><span className="mono">01</span><strong>UNDERSTAND</strong><p>Ask questions, understand the business and figure out what actually needs to be communicated.</p></article>
+            <article className="process-card process-pink"><span className="mono">02</span><strong>EXPLORE</strong><p>Look at the brand, audience, competitors and trends before deciding what direction makes sense.</p></article>
+            <article className="process-card process-blue"><span className="mono">03</span><strong>CREATE</strong><p>Turn the direction into social content, campaigns, reels, creatives and visual ideas.</p></article>
+            <article className="process-card process-paper"><span className="mono">04</span><strong>REFINE</strong><p>Work with the client, improve the details, publish the work and learn from what happens next.</p></article>
+          </div>
+          <div className="desk-services"><span className="mono">WHAT CAN HAPPEN AT THE DESK</span><div className="desk-service-list"><span>SOCIAL MEDIA</span><span>CONTENT</span><span>CREATIVES</span><span>REELS</span><span>STRATEGY</span><span>ANALYTICS</span><span>COLLABORATIONS</span></div></div>
           <div className="tape tape-one" />
         </section>
 
