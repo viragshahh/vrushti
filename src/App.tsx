@@ -26,6 +26,7 @@ function App() {
   const [cursorLabel, setCursorLabel] = useState('')
   const [activeReel, setActiveReel] = useState(0)
   const [activePost, setActivePost] = useState(0)
+  const [reelStartX, setReelStartX] = useState<number | null>(null)
 
   useEffect(() => {
     if (!root.current) return
@@ -188,7 +189,7 @@ function App() {
               <div className="feature-label mono">02 / REELS</div>
               <div className="feature-heading"><h3>Swipe<br/><span>the reels.</span></h3><p>Built for the 9:16 frame. One reel at a time, so the work gets the screen to itself.</p></div>
               <div className="reel-stage">
-                <div className="reel-device">
+                <div className="reel-device" onPointerDown={(e) => setReelStartX(e.clientX)} onPointerUp={(e) => { if (reelStartX === null) return; const dx = e.clientX - reelStartX; if (Math.abs(dx) > 45) setActiveReel(dx < 0 ? 1 : 0); setReelStartX(null) }} onPointerCancel={() => setReelStartX(null)}>
                   <div className="reel-topbar"><span className="mono">REEL <b>{activeReel + 1}</b> / 2</span><span>9:16</span></div>
                   <div className="reel-screen">
                     <div className="reel-orbit orbit-a" />
