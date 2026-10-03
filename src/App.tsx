@@ -6,9 +6,12 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
 const projects = [
-  { n: '01', title: 'Visual Identity', type: 'Brand / Design', note: 'MAKE IT LOOK LIKE IT MEANS SOMETHING.', color: 'yellow', rotate: '-3deg' },
-  { n: '02', title: 'Social Universe', type: 'Content / Social', note: 'STOP THE SCROLL. START A STORY.', color: 'pink', rotate: '2deg' },
-  { n: '03', title: 'Campaign Lab', type: 'Digital / Campaign', note: 'IDEAS FIRST. POLISH SECOND.', color: 'blue', rotate: '-2deg' },
+  { n: '01', title: 'Social Media', type: 'LOCAL BUSINESS / CONTENT', note: 'CONTENT THAT FEELS LIKE THE BRAND.', color: 'yellow', rotate: '-2deg', metric: '6,352', metricLabel: 'views in one reported month' },
+  { n: '02', title: 'Brand Identity', type: 'BRANDING / DESIGN', note: 'A VISUAL LANGUAGE PEOPLE CAN RECOGNISE.', color: 'pink', rotate: '1.5deg', metric: 'LOGO', metricLabel: 'identity and visual direction' },
+  { n: '03', title: 'Social Campaign', type: 'SOCIAL / CAMPAIGN', note: 'DESIGNING A FEED THAT FEELS CONSISTENT.', color: 'blue', rotate: '-1.5deg', metric: 'SOCIAL', metricLabel: 'campaign creatives and content' },
+  { n: '04', title: 'Promotional Design', type: 'POSTERS / CREATIVES', note: 'MAKE THE MESSAGE HARD TO MISS.', color: 'paper', rotate: '2deg', metric: 'POSTERS', metricLabel: 'promotional and product creatives' },
+  { n: '05', title: 'Event & Invite Design', type: 'INVITES / EVENT DESIGN', note: 'DETAILS THAT MAKE THE MOMENT FEEL SPECIAL.', color: 'yellow', rotate: '-1deg', metric: 'INVITES', metricLabel: 'wedding and event stationery' },
+  { n: '06', title: 'Analytics & Reporting', type: 'SOCIAL / ANALYTICS', note: 'LOOK AT THE NUMBERS. THEN DECIDE WHAT TO DO NEXT.', color: 'pink', rotate: '1deg', metric: '2,025', metricLabel: 'accounts reached in one report' },
 ]
 
 const notes = [
@@ -85,7 +88,6 @@ function App() {
           <div className="desk-lines" />
           <div className="hero-spark spark-one">✦</div>
           <div className="hero-spark spark-two">✧</div>
-
           <div className="hero-main">
             <div className="mono kicker">CREATIVE PORTFOLIO / DIGITAL DESK</div>
             <span className="desk-welcome">welcome to my desk ↗</span>
@@ -96,15 +98,8 @@ function App() {
               <span className="tiny-note">currently collecting good ideas ✦</span>
             </div>
           </div>
-
-          <div className="desk-note note-yellow n1" style={{transform:'rotate(-5deg)'}}>
-            <Pin size={18}/><strong>TODO</strong><span>make something<br/>people remember</span><small>✓ design<br/>✓ social<br/>□ magic</small>
-          </div>
-          <div className="desk-note note-pink n2" style={{transform:'rotate(4deg)'}}>
-            <span className="hand">idea #27</span><strong>MAKE IT FEEL<br/>LIKE YOU.</strong>
-            <small>keep this one.</small>
-          </div>
-
+          <div className="desk-note note-yellow n1" style={{transform:'rotate(-5deg)'}}><Pin size={18}/><strong>TODO</strong><span>make something<br/>people remember</span><small>✓ design<br/>✓ social<br/>□ magic</small></div>
+          <div className="desk-note note-pink n2" style={{transform:'rotate(4deg)'}}><span className="hand">idea #27</span><strong>MAKE IT FEEL<br/>LIKE YOU.</strong><small>keep this one.</small></div>
           <div className="desk-sticker"><span className="sticker-star">✦</span><span>MAKE<br/>GOOD<br/>STUFF</span></div>
           <div className="hero-bottom mono"><span>SCROLL TO EXPLORE ↓</span><span>DESIGN / SOCIAL / CONTENT</span></div>
         </section>
@@ -114,14 +109,12 @@ function App() {
             <p className="desk-kicker">YOU BRING THE <mark>BUSINESS.</mark></p>
             <p className="desk-lead">I help turn what you do into a social presence that looks like you, sounds like you and gives people a reason to stop and pay attention.</p>
           </div>
-
           <div className="offer-grid">
             <article className="offer-card offer-main"><span className="mono">01 / SOCIAL</span><strong>Social Media<br/>Management</strong><p>Content planning, calendars, publishing, page management and the day to day work that keeps a brand active.</p><div className="offer-tags"><span>PLANNING</span><span>CALENDARS</span><span>MANAGEMENT</span></div></article>
             <article className="offer-card offer-pink"><span className="mono">02 / CONTENT</span><strong>Content &amp;<br/>Creatives</strong><p>Posts, stories, reels, edits and promotional creatives built around the brand and its audience.</p><div className="offer-tags"><span>POSTS</span><span>STORIES</span><span>REELS</span></div></article>
             <article className="offer-card offer-blue"><span className="mono">03 / DIRECTION</span><strong>Strategy &amp;<br/>Analytics</strong><p>Content strategy, trend research, performance tracking and practical insights for what to try next.</p><div className="offer-tags"><span>STRATEGY</span><span>ANALYTICS</span><span>INSIGHTS</span></div></article>
             <article className="offer-card offer-paper"><span className="mono">04 / GROWTH</span><strong>Collaborations &amp;<br/>Campaigns</strong><p>Influencer collaborations, campaign ideas and supporting creative work when the brand needs a bigger push.</p><div className="offer-tags"><span>COLLABS</span><span>CAMPAIGNS</span><span>CREATIVE</span></div></article>
           </div>
-
           <div className="desk-approach">
             <div className="approach-heading"><h3>Here’s how I <em>work.</em></h3><p>I treat every project like it is my own. I ask first, research properly, make the idea, work with the client and keep refining until it feels right.</p></div>
             <div className="approach-steps">
@@ -131,7 +124,6 @@ function App() {
               <article><span className="mono">04</span><strong>REFINE</strong><p>Review with the client, publish, track and learn from what happens next.</p></article>
             </div>
           </div>
-
           <div className="desk-services"><span className="mono">THE DESK CAN HANDLE</span><div className="desk-service-list"><span>SOCIAL MEDIA</span><span>CONTENT</span><span>CREATIVES</span><span>REELS</span><span>STRATEGY</span><span>ANALYTICS</span><span>COLLABORATIONS</span></div></div>
           <div className="tape tape-one" />
         </section>
@@ -139,15 +131,19 @@ function App() {
         <section className="work section" id="work">
           <div className="work-heading" data-reveal>
             <div><h2>Pick something<br/><span>up.</span></h2></div>
-            <p>These are placeholder projects for now. Real work, client names and case studies come next.</p>
+            <p>A look at the kind of work I do across social media, design, content and campaign support.</p>
           </div>
           <div className="notes-grid">
             {projects.map((p) => (
               <article className={`work-note ${p.color}`} key={p.n}
                 style={{transform:`rotate(${p.rotate})`}}
-                onMouseEnter={() => setCursorLabel('OPEN')} onMouseLeave={() => setCursorLabel('')}>
+                onMouseEnter={() => setCursorLabel('LOOK')} onMouseLeave={() => setCursorLabel('')}>
                 <div className="note-top"><span className="mono">{p.n}</span><Pin size={16}/></div>
-                <div className="fake-image"><div className="fake-shape one"/><div className="fake-shape two"/><b>{p.title.split(' ')[0]}</b></div>
+                <div className="work-visual">
+                  <div className="visual-grid"/>
+                  <div className="visual-word">{p.metric}</div>
+                  <div className="visual-caption">{p.metricLabel}</div>
+                </div>
                 <div className="note-info"><span className="mono">{p.type}</span><h3>{p.title}</h3><p>{p.note}</p></div>
                 <div className="note-arrow"><ArrowUpRight size={19}/></div>
               </article>
@@ -157,38 +153,26 @@ function App() {
 
         <section className="capabilities section" data-reveal>
           <h2>I design.<br/><i>I post.</i><br/>I make brands<br/><span>feel like brands.</span></h2>
-          <div className="cap-list">
-            {notes.map(([title, text], i) => <div className="cap-row" key={title}><span className="mono">0{i+1}</span><strong>{title}</strong><p>{text}</p><ArrowUpRight size={20}/></div>)}
-          </div>
+          <div className="cap-list">{notes.map(([title, text], i) => <div className="cap-row" key={title}><span className="mono">0{i+1}</span><strong>{title}</strong><p>{text}</p><ArrowUpRight size={20}/></div>)}</div>
         </section>
 
         <section className="yellow-zone">
           <div className="yellow-inner">
             <h2>Ideas before<br/><span>they become briefs.</span></h2>
             <p>Personal experiments, visual studies, trend tests and tiny obsessions. This is the messy corner of the desk.</p>
-            <div className="floating-mini mini-one">try this</div>
-            <div className="floating-mini mini-two">maybe later?</div>
-            <div className="floating-mini mini-three">★ keep</div>
+            <div className="floating-mini mini-one">try this</div><div className="floating-mini mini-two">maybe later?</div><div className="floating-mini mini-three">★ keep</div>
           </div>
         </section>
 
         <section className="about section" id="about" data-reveal>
           <div className="about-layout">
             <div className="about-number">V<span>.</span></div>
-            <div>
-              <h2>Design brain.<br/><em>Social instinct.</em></h2>
-              <p>I like visual systems that have a point of view, expressive enough to be remembered, clear enough to work. I'm early in my journey, curious by default and always collecting references.</p>
-              <div className="about-tags"><span>GRAPHIC DESIGN</span><span>SOCIAL MEDIA</span><span>CONTENT</span></div>
-            </div>
+            <div><h2>Design brain.<br/><em>Social instinct.</em></h2><p>I like visual systems that have a point of view, expressive enough to be remembered, clear enough to work. I'm early in my journey, curious by default and always collecting references.</p><div className="about-tags"><span>GRAPHIC DESIGN</span><span>SOCIAL MEDIA</span><span>CONTENT</span></div></div>
           </div>
         </section>
 
         <section className="contact section" id="contact">
-          <div className="contact-note">
-            <h2>Got a good<br/><span>idea?</span></h2>
-            <p>Let's put it on the desk.</p>
-            <button className="paper-button dark" onClick={() => window.location.href='mailto:hello@vrushti.design'}>Start a conversation <MoveUpRight size={17}/></button>
-          </div>
+          <div className="contact-note"><h2>Got a good<br/><span>idea?</span></h2><p>Let's put it on the desk.</p><button className="paper-button dark" onClick={() => window.location.href='mailto:hello@vrushti.design'}>Start a conversation <MoveUpRight size={17}/></button></div>
           <div className="footer mono"><span>VRUSHTI / CREATIVE PORTFOLIO</span><span>© 2026</span><span>MADE WITH TOO MANY IDEAS ✦</span></div>
         </section>
       </main>
