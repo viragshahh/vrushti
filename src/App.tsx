@@ -110,19 +110,30 @@ function App() {
         </section>
 
                 <section className="intro section" data-reveal>
-          <div className="section-label mono">01 / THE DESK</div>
+          <div className="section-label mono">01 / WHAT I CAN DO FOR YOU</div>
           <div className="desk-intro-copy">
-            <p className="desk-kicker">YOUR BUSINESS. <mark>MY DESK.</mark></p>
-            <p className="desk-lead">I treat every project like it is my own. First I understand the business, then I find the idea, build the content and keep refining until it feels right.</p>
-            <div className="desk-proof"><span className="mono">THE APPROACH</span><span>Curious before creative. Personal before generic.</span></div>
+            <p className="desk-kicker">YOU BRING THE <mark>BUSINESS.</mark></p>
+            <p className="desk-lead">I help turn what you do into a social presence that looks like you, sounds like you and gives people a reason to stop and pay attention.</p>
           </div>
-          <div className="desk-process">
-            <article className="process-card process-yellow"><span className="mono">01</span><strong>UNDERSTAND</strong><p>Ask questions, understand the business and figure out what actually needs to be communicated.</p></article>
-            <article className="process-card process-pink"><span className="mono">02</span><strong>EXPLORE</strong><p>Look at the brand, audience, competitors and trends before deciding what direction makes sense.</p></article>
-            <article className="process-card process-blue"><span className="mono">03</span><strong>CREATE</strong><p>Turn the direction into social content, campaigns, reels, creatives and visual ideas.</p></article>
-            <article className="process-card process-paper"><span className="mono">04</span><strong>REFINE</strong><p>Work with the client, improve the details, publish the work and learn from what happens next.</p></article>
+
+          <div className="offer-grid">
+            <article className="offer-card offer-main"><span className="mono">01 / SOCIAL</span><strong>Social Media<br/>Management</strong><p>Content planning, calendars, publishing, page management and the day to day work that keeps a brand active.</p><div className="offer-tags"><span>PLANNING</span><span>CALENDARS</span><span>MANAGEMENT</span></div></article>
+            <article className="offer-card offer-pink"><span className="mono">02 / CONTENT</span><strong>Content &amp;<br/>Creatives</strong><p>Posts, stories, reels, edits and promotional creatives built around the brand and its audience.</p><div className="offer-tags"><span>POSTS</span><span>STORIES</span><span>REELS</span></div></article>
+            <article className="offer-card offer-blue"><span className="mono">03 / DIRECTION</span><strong>Strategy &amp;<br/>Analytics</strong><p>Content strategy, trend research, performance tracking and practical insights for what to try next.</p><div className="offer-tags"><span>STRATEGY</span><span>ANALYTICS</span><span>INSIGHTS</span></div></article>
+            <article className="offer-card offer-paper"><span className="mono">04 / GROWTH</span><strong>Collaborations &amp;<br/>Campaigns</strong><p>Influencer collaborations, campaign ideas and supporting creative work when the brand needs a bigger push.</p><div className="offer-tags"><span>COLLABS</span><span>CAMPAIGNS</span><span>CREATIVE</span></div></article>
           </div>
-          <div className="desk-services"><span className="mono">WHAT CAN HAPPEN AT THE DESK</span><div className="desk-service-list"><span>SOCIAL MEDIA</span><span>CONTENT</span><span>CREATIVES</span><span>REELS</span><span>STRATEGY</span><span>ANALYTICS</span><span>COLLABORATIONS</span></div></div>
+
+          <div className="desk-approach">
+            <div className="approach-heading"><span className="mono">02 / THE APPROACH</span><h3>Then we get<br/><em>to work.</em></h3><p>I treat every project like it is my own. I ask first, research properly, make the idea, work with the client and keep refining until it feels right.</p></div>
+            <div className="approach-steps">
+              <article><span className="mono">01</span><strong>UNDERSTAND</strong><p>Ask questions and get clear on the business, audience and goal.</p></article>
+              <article><span className="mono">02</span><strong>EXPLORE</strong><p>Study the brand, competitors and trends before choosing a direction.</p></article>
+              <article><span className="mono">03</span><strong>CREATE</strong><p>Turn the direction into content, reels, creatives and campaigns.</p></article>
+              <article><span className="mono">04</span><strong>REFINE</strong><p>Review with the client, publish, track and learn from what happens next.</p></article>
+            </div>
+          </div>
+
+          <div className="desk-services"><span className="mono">THE DESK CAN HANDLE</span><div className="desk-service-list"><span>SOCIAL MEDIA</span><span>CONTENT</span><span>CREATIVES</span><span>REELS</span><span>STRATEGY</span><span>ANALYTICS</span><span>COLLABORATIONS</span></div></div>
           <div className="tape tape-one" />
         </section>
 
