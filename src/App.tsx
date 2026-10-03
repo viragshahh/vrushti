@@ -75,20 +75,6 @@ function App() {
         }, index)
       })
 
-      gsap.utils.toArray<HTMLElement>('[data-page-reveal]').forEach((el) => {
-        gsap.fromTo(el, { y: 18, opacity: 0 }, {
-          y: 0,
-          opacity: 1,
-          duration: .65,
-          ease: 'power3.out',
-          scrollTrigger: {
-            trigger: el,
-            containerAnimation: flip,
-            start: 'left 85%',
-            once: true,
-          },
-        })
-      })
     }, root)
 
     return () => ctx.revert()
