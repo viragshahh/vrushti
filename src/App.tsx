@@ -27,8 +27,6 @@ function App() {
   const [activeReel, setActiveReel] = useState(0)
   const [activePost, setActivePost] = useState(0)
   const [reelStartX, setReelStartX] = useState<number | null>(null)
-  const [activeReel, setActiveReel] = useState(0)
-  const [activePost, setActivePost] = useState(0)
 
   useEffect(() => {
     if (!root.current) return
@@ -152,15 +150,6 @@ function App() {
         <section className="work section" id="work">
           <div className="work-heading" data-reveal>
             <div><h2>Pick something<br/><span>up.</span></h2></div>
-            <p>A look at the kind of work I do across social media, design, content and campaign support.</p>
-          </div>
-          <div className="notes-grid">
-            {projects.map((p) => (
-              <article className={`work-note ${p.color}`} key={p.n}
-                style={{transform:`rotate(${p.rotate})`}}
-                onMouseEnter={() => set        <section className="work section" id="work">
-          <div className="work-heading" data-reveal>
-            <div><h2>Pick something<br/><span>up.</span></h2></div>
             <p>A look at the real kind of work I do across social media, reels, design, campaigns, branding and analytics.</p>
           </div>
 
@@ -251,7 +240,14 @@ function App() {
           </div>
         </section>
 
-efs.</span></h2>
+        <section className="capabilities section" data-reveal>
+          <h2>I design.<br/><i>I post.</i><br/>I make brands<br/><span>feel like brands.</span></h2>
+          <div className="cap-list">{notes.map(([title, text], i) => <div className="cap-row" key={title}><span className="mono">0{i+1}</span><strong>{title}</strong><p>{text}</p><ArrowUpRight size={20}/></div>)}</div>
+        </section>
+
+        <section className="yellow-zone">
+          <div className="yellow-inner">
+            <h2>Ideas before<br/><span>they become briefs.</span></h2>
             <p>Personal experiments, visual studies, trend tests and tiny obsessions. This is the messy corner of the desk.</p>
             <div className="floating-mini mini-one">try this</div><div className="floating-mini mini-two">maybe later?</div><div className="floating-mini mini-three">★ keep</div>
           </div>
