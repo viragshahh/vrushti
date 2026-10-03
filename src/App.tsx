@@ -115,7 +115,7 @@ function App() {
   const jumpToPage = (pageIndex: number) => {
     if (!notebook.current) return
     const start = notebook.current.getBoundingClientRect().top + window.scrollY
-    const distance = Math.max(window.innerHeight * 5.5, window.innerHeight * 5)
+    const distance = window.innerHeight * 7
     const totalTurns = 7
     window.scrollTo({
       top: start + (distance / totalTurns) * pageIndex,
@@ -328,7 +328,7 @@ function App() {
           </div>
 
           <div className="scroll-cue mono"><span>SCROLL</span><ArrowDown size={14} /></div>
-          <div className="page-progress mono"><span>01</span><i /><span>06</span></div>
+          <div className="page-progress mono"><span>01</span><i /><span>07</span></div>
         </section>
       </main>
     </div>
